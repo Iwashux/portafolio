@@ -1,0 +1,106 @@
+:root {
+    --fontsize-menu: 2rem;
+    --padding-menu: 8px;
+    --gap-menu: 8px;
+    --border-menu: 3px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: rgb(43, 0, 68);
+    color: white;
+    overflow: hidden;
+}
+
+nav {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    font-size: var(--fontsize-menu);
+    background-color: #000000;
+
+    border: var(--border-menu) solid grey;
+    border-right: 0;
+    border-radius: 16px 0 0 16px;
+
+    height: calc((var(--fontsize-menu) + var(--padding-menu)*2)*3 + var(--gap-menu)*2 + var(--border-menu)*2);
+    overflow: hidden;
+}
+nav .menu {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+nav #options__menu {
+    list-style: none;
+    display: grid;
+    gap: var(--gap-menu);
+    transform: translateY(calc(((var(--fontsize-menu) + var(--padding-menu)*2) + var(--gap-menu))*1));
+    transition: transform 0.5s linear;
+    z-index: 1;
+}
+nav li, #up, #down {
+    padding: 8px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+nav #up, nav #down {
+    position: absolute;
+    background-color: black;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    cursor: pointer;
+}
+nav #up {
+    top: 0;
+}
+nav #down {
+    bottom: 0;
+}
+nav span {
+    display: none;
+}
+
+section {
+    height: 100vh;
+}
+
+
+
+#icons{
+    font-size: 2em;
+}
+
+.fa-js{
+    color: #f0db4f;
+}
+
+.fa-html5{
+    color: #fc490b;
+}
+
+.fa-css3{
+    color: #2864f0;
+}
+
+.fa-laravel{
+    color: #f55247;
+}
+
+.fa-php{
+    color: #777bb4;
+}
+
+.fa-github{
+    color: #6e5494;
+}
