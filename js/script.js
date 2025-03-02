@@ -1,5 +1,11 @@
 let page = 1;
-let isAnimating = false;
+
+const view = {
+    "1": "portada",
+    "0": "sobre-mi",
+    "-1": "proyectos",
+    "-2": "contacto"
+}
 
 window.onload = function() {
     setTimeout(function() {
@@ -10,8 +16,6 @@ window.onload = function() {
 
 document.querySelectorAll("#menu > i").forEach(item => {
     item.addEventListener("click", function() {
-        if (isAnimating) return;
-
         let move = 0;
         if (this.id === "up" && page < 1) {
             move = 1;
@@ -19,63 +23,35 @@ document.querySelectorAll("#menu > i").forEach(item => {
             move = -1;
         }
         
-        changePage(move);
+        if (move === 0) return;
+        page += move;
+        changeIconPage();
+
+        document.querySelector(`#${view[page]}`).scrollIntoView({ behavior: "smooth" });
     });
 });
 
-window.addEventListener('wheel', function(event) {
-    if (isAnimating) return;
-
-    let move = 0;
-    if (event.deltaY > 0 && page > -2) {
-        move = -1;
-    } else if (event.deltaY < 0 && page < 1) {
-        move = 1;
-    }
-
-    changePage(move);
+window.addEventListener('scroll', () => {
+    document.querySelectorAll('body > section').forEach((element) => {
+        const rect = element.getBoundingClientRect();
+    
+        // Detecta si el elemento está en la parte superior de la pantalla
+        if (rect.top <= 250 && rect.bottom >= 250) {
+            // Extrae el número correspondiente al id usando el objeto view
+            for (const [key, value] of Object.entries(view)) {
+                if (value === element.id) {
+                    page = parseInt(key);
+                    changeIconPage();
+                }
+            }
+        }
+    });
 });
 
-// let touchStartY = 0;
-// let touchEndY = 0;
-
-// window.addEventListener('touchstart', function(event) {
-//     touchStartY = event.changedTouches[0].screenY;
-// });
-
-// window.addEventListener('touchend', function(event) {
-//     if (isAnimating) return;
-
-//     touchEndY = event.changedTouches[0].screenY;
-//     let move = 0;
-
-//     if (touchStartY - touchEndY > 50 && page > -2) {
-//         move = -1;
-//     } else if (touchEndY - touchStartY > 50 && page < 1) {
-//         move = 1;
-//     }
-
-//     changePage(move);
-// });
-
-function changePage(move) {
-    if (move === 0) return;
-
-    isAnimating = true;
-    page += move;
-
+function changeIconPage() {
+    event.stopPropagation;
     const optionsMenuIcons = document.querySelectorAll("#options__menu");
     optionsMenuIcons.forEach(icon => {
         icon.style.transform = `translateY(calc(((var(--fontsize-menu) + 16px) + var(--gap-menu)) * ${page}))`;
     });
-
-    window.scrollTo({
-        top: window.scrollY + window.innerHeight * move * -1,
-        behavior: 'smooth'
-    });
-
-    // Esperar a que la animación de scroll termine
-    setTimeout(() => {
-        isAnimating = false;
-    }, 500); // Ajusta el tiempo según la duración de tu animación
 }

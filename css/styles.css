@@ -11,11 +11,30 @@
     box-sizing: border-box;
 }
 
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
 body {
     font-family: sans-serif;
     background-color: rgb(43, 0, 68);
     color: white;
-    overflow: hidden;
 }
 
 nav {
@@ -63,19 +82,73 @@ nav #up, nav #down {
 }
 nav #up {
     top: 0;
+    box-shadow: 0px 4px 6px 6px rgb(0 0 0 / 30%);
 }
 nav #down {
     bottom: 0;
+    box-shadow: 0px -6px 6px 6px rgb(0 0 0 / 30%);
 }
 nav span {
     display: none;
 }
 
-section {
-    height: 100vh;
+body > section {
+    min-height: 100vh;
+    max-width: 1200px;
+    margin: auto;
+    padding: 16px;
+}
+
+#portada {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card__proyect {
+    position: relative;
+    width: calc((100% - 16px)/4 - 16px);
+    height: fit-content;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    background-color: #470c44a1;
+    border: 2px solid rgba(0, 0, 0, 0.301);
+    border-radius: 16px;
+    padding: 16px;
+    margin: 8px;
+    transition: transform 0.5s;
+}
+.card__proyect:hover {
+    transform: scale(1.05);
+}
+.proyect__container {
+    display: flex;
+}
+.card__proyect:nth-child(even){
+    margin-top: 75px;
+}
+.card__proyect:nth-child(odd){
+    margin-bottom: 75px;
+}
+.card__proyect img {
+    width: 100%;
+    border-radius: 16px;
+}
+.card__proyect i {
+    font-size: 1.25em;
 }
 
 
+.view__icons {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    font-size: 2rem;
+}
 
 #icons{
     font-size: 2em;
@@ -101,6 +174,24 @@ section {
     color: #777bb4;
 }
 
+.fa-linkedin{
+    color: #0077b5;
+}
 .fa-github{
     color: #6e5494;
+}
+
+/* Para navegadores basados en WebKit (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Para Firefox */
+html {
+    scrollbar-width: none;
+}
+
+/* Opcional: Para que no haya desplazamiento horizontal si el contenido se desborda */
+body {
+    overflow-x: hidden;
 }

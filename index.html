@@ -11,14 +11,14 @@
 <body>
     <nav>
         <section id="menu">
-            <i id="up" class="fa-solid fa-arrow-up"></i></li>
+            <i id="up" class="fa-solid fa-arrow-up"></i>
             <ul id="options__menu">
                 <li><span>Sobre mí</span> <i class="fa-solid fa-user-tie"></i></li>
                 <li><span>Proyectos</span> <i class="fa-solid fa-code"></i></li>
                 <li><span>Habilidades</span> <i class="fa-solid fa-cogs"></i></li>
                 <li><span>Contacto</span> <i class="fa-solid fa-address-card"></i></li>
             </ul>  
-            <i id="down" class="fa-solid fa-arrow-down"></i></li>
+            <i id="down" class="fa-solid fa-arrow-down"></i>
         </section>
     </nav>
 
@@ -27,72 +27,106 @@
         <h2>Desarrollador de Sofware</h2>
         <p>Siempre mejorando y resolviendo.</p>
         <p>Me apasiona encontrar soluciones eficientes y mejorar continuamente en cada desafío.</p>
-    </section id="portada">
+    </section>
 
     <section id="sobre-mi">
         <h2>Sobre mí</h2>
         <p>Soy un desarrollador de software apasionado por la tecnología y el aprendizaje continuo. Me adapto con facilidad a distintos lenguajes de programación y disfruto explorando nuevas tecnologías para encontrar soluciones eficientes e innovadoras. 
             Siempre busco optimizar procesos y mejorar mis habilidades, enfrentando cada desafío con una mentalidad de crecimiento y resolución de problemas. Mi enfoque es evolucionar constantemente y aportar valor a cada proyecto en el que participo.</p>
+        <h2>Habilidades</h2>
+        <ul class="skills__icons view__icons">
+            <li><i class="fa-brands fa-html5"></i></li>
+            <li><i class="fa-brands fa-css3"></i></li>
+            <li><i class="fa-brands fa-js"></i></li>
+            <li><i class="fa-brands fa-laravel"></i></li>
+            <li><i class="fa-brands fa-php"></i></li>
+        </ul>
+        <h2>Redes</h2>
+        <ul class="view__icons">
+            <li><a href="https://www.linkedin.com/in/edu-silva-vil/"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li><a href="https://github.com/Iwashux"><i class="fa-brands fa-github"></i></a></li>
+        </ul>
     </section>
 
     <section id="proyectos">
         <h2>Mini-Proyectos</h2>
-        <div class="proyecto">
-            <h3>Creador de personajes</h3>
-            <img src="" alt="">
-            <i class="fa-brands fa-js"></i> <i class="fa-brands fa-html5"></i> <i class="fa-brands fa-css3"></i>
-            <p>Plantilla para la creación de personajes, permitiendo la personalizar y configurar de atributos y características según necesidades.</p>
-        </div>
-
-        <div class="proyecto">
-            <h3>Planilla Pixel Art</h3>
-            <img src="" alt="">
-            <i class="fa-brands fa-js"></i> <i class="fa-brands fa-html5"></i> <i class="fa-brands fa-css3"></i>
-            <p>Planilla que permite crear y visualizar arte en píxel, ofreciendo una plataforma sencilla para diseñar gráficos pixelados personalizados.</p>
-        </div>
-        
-        <div class="proyecto">
-            <h3>Planilla Pixel Art</h3>
-            <img src="" alt="">
-            <i class="fa-brands fa-js"></i> <i class="fa-brands fa-html5"></i> <i class="fa-brands fa-css3"></i>
-            <p>Herramienta web que permite encriptar y desencriptar texto, mediante métodos de cifrado simples.</p>
-        </div>
-
-        <div class="proyecto">
-            <h3>Planilla Pixel Art</h3>
-            <img src="" alt="">
-            <i class="fa-brands fa-js"></i> <i class="fa-brands fa-html5"></i> <i class="fa-brands fa-css3"></i>
-            <p>Minijuego de adivinanza donde el usuario debe encontrar un número secreto generado aleatoriamente, con validaciones de entrada.</p>
-        </div>
+        <section class="proyect__container">
+            <div class="card__proyect">
+                <h3>Creador de personajes</h3>
+                <img src="img/creador_personajes.png" alt="Plantilla para la creación de personajes, permitiendo la personalizar y configurar de atributos y características según necesidades.">
+                <div class="lenguajes__container">
+                    <i class="fa-brands fa-html5"></i> 
+                    <i class="fa-brands fa-css3"></i>
+                    <i class="fa-brands fa-js"></i> 
+                </div>
+                <p>Plantilla para la creación de personajes, permitiendo la personalizar y configurar de atributos y características según necesidades.</p>
+            </div>
+    
+            <div class="card__proyect">
+                <h3>Planilla Pixel Art</h3>
+                <img src="img/pixel_art.png" alt="Planilla que permite crear y visualizar arte en píxel, ofreciendo una plataforma sencilla para diseñar gráficos pixelados personalizados.">
+                <div class="lenguajes__container">
+                    <i class="fa-brands fa-html5"></i> 
+                    <i class="fa-brands fa-css3"></i>
+                    <i class="fa-brands fa-js"></i> 
+                </div>
+                <p>Planilla que permite crear y visualizar arte en píxel, ofreciendo una plataforma sencilla para diseñar gráficos pixelados personalizados.</p>
+            </div>
+            
+            <div class="card__proyect">
+                <h3>Encriptador de Texto</h3>
+                <img src="img/encriptador.png" alt="Herramienta web que permite encriptar y desencriptar texto, mediante métodos de cifrado simples.">
+                <div class="lenguajes__container">
+                    <i class="fa-brands fa-html5"></i> 
+                    <i class="fa-brands fa-css3"></i>
+                    <i class="fa-brands fa-js"></i> 
+                </div>
+                <p>Herramienta web que permite encriptar y desencriptar texto, mediante métodos de cifrado simples.</p>
+            </div>
+    
+            <div class="card__proyect">
+                <h3>Numero Mágico</h3>
+                <img src="img/mini_juego.png" alt="Minijuego de adivinanza donde el usuario debe encontrar un número secreto generado aleatoriamente, con validaciones de entrada.">
+                <div class="lenguajes__container">
+                    <i class="fa-brands fa-html5"></i> 
+                    <i class="fa-brands fa-css3"></i>
+                    <i class="fa-brands fa-js"></i> 
+                </div>
+                <p>Minijuego de adivinanza donde el usuario debe encontrar un número secreto generado aleatoriamente, con validaciones de entrada.</p>
+            </div>
+        </section>
 
         <h2>Proyectos Ambicioso</h2>
-        <div class="proyecto">
-            <h3>Administración de Documentos</h3>
-            <img src="" alt="">
-            <i class="fa-brands fa-js"></i> <i class="fa-brands fa-html5"></i> <i class="fa-brands fa-css3"></i> <i class="fa-brands fa-laravel"></i> <i class="fa-brands fa-php"></i>
-            <p>Plataforma para gestionar y organizar documentos de autores, facilitando la creación, edición y almacenamiento de manuscritos de libros de manera eficiente.</p>
-        </div>
-
-        <div class="proyecto">
-            <h3>Tienda de Intercambio</h3>
-            <img src="" alt="">
-            <i class="fa-brands fa-js"></i> <i class="fa-brands fa-html5"></i> <i class="fa-brands fa-css3"></i> <i class="fa-brands fa-laravel"></i> <i class="fa-brands fa-php"></i>
-            <p>Plataforma para facilitar y gestionar intercambios de productos o servicios entre usuarios de manera sencilla y segura.</p>
-        </div>
-        <!-- Agrega más proyectos según sea necesario -->
+        <section class="proyect__container">
+            <div class="card__proyect">
+                <h3>Administración de Documentos</h3>
+                <img src="" alt="">
+                <div class="lenguajes__container">
+                    <i class="fa-brands fa-html5"></i>
+                    <i class="fa-brands fa-css3"></i>
+                    <i class="fa-brands fa-js"></i>
+                    <i class="fa-brands fa-laravel"></i>
+                    <i class="fa-brands fa-php"></i>
+                </div>
+                <p>Plataforma para gestionar y organizar documentos de autores, facilitando la creación, edición y almacenamiento de manuscritos de libros de manera eficiente.</p>
+            </div>
+    
+            <div class="card__proyect">
+                <h3>Tienda de Intercambio</h3>
+                <img src="" alt="">
+                <div class="lenguajes__container">
+                    <i class="fa-brands fa-html5"></i>
+                    <i class="fa-brands fa-css3"></i>
+                    <i class="fa-brands fa-js"></i>
+                    <i class="fa-brands fa-laravel"></i>
+                    <i class="fa-brands fa-php"></i>
+                </div>
+                <p>Plataforma para facilitar y gestionar intercambios de productos o servicios entre usuarios de manera sencilla y segura.</p>
+            </div>
+        </section>
     </section>
 
     <section id="contacto">
-        <h2>Habilidades</h2>
-        <ul>
-            <li><i class="fa-brands fa-js"></i></li>
-            <li><i class="fa-brands fa-html5"></i></li>
-            <li><i class="fa-brands fa-css3"></i></li>
-            <li><i class="fa-brands fa-laravel"></i></li>
-            <li><i class="fa-brands fa-php"></i></li>
-            <li><i class="fa-brands fa-github"></i></li>
-        </ul>
-
         <h2>Contacto</h2>
         <p>Si deseas ponerte en contacto conmigo, puedes enviarme un correo a: <a href="mailto:edu.silva.vil@gmail.com">edu.silva.vil@gmail.com</a></p>
 
