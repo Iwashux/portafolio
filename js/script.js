@@ -1,4 +1,5 @@
 let page = 1;
+let isScrolling = false;
 
 const view = {
     "1": "portada",
@@ -27,11 +28,15 @@ document.querySelectorAll("#menu > i").forEach(item => {
         page += move;
         changeIconPage();
 
+        isScrolling = true; // Indica que el desplazamiento fue iniciado por un clic en el menú
         document.querySelector(`#${view[page]}`).scrollIntoView({ behavior: "smooth" });
+        setTimeout(() => { isScrolling = false; }, 500); // Restablece la bandera después de un tiempo
     });
 });
 
 window.addEventListener('scroll', () => {
+    if (isScrolling) return; // Si el desplazamiento fue iniciado por un clic en el menú, no hacer nada
+
     document.querySelectorAll('body > section').forEach((element) => {
         const rect = element.getBoundingClientRect();
     
@@ -49,7 +54,6 @@ window.addEventListener('scroll', () => {
 });
 
 function changeIconPage() {
-    event.stopPropagation;
     const optionsMenuIcons = document.querySelectorAll("#options__menu");
     optionsMenuIcons.forEach(icon => {
         icon.style.transform = `translateY(calc(((var(--fontsize-menu) + 16px) + var(--gap-menu)) * ${page}))`;
