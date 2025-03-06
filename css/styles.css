@@ -35,6 +35,7 @@ body {
     font-family: sans-serif;
     background-color: rgb(43, 0, 68);
     color: white;
+    background: linear-gradient(to right, #370654, #12031d 20%, #12031d 80%, #370654);
 }
 
 nav {
@@ -92,7 +93,7 @@ nav span {
     display: none;
 }
 
-body > section {
+main > section {
     min-height: 100vh;
     max-width: 1200px;
     margin: auto;
@@ -100,11 +101,14 @@ body > section {
 }
 
 #portada, #sobre-mi {
+    position: relative;
     display: flex;
     justify-content: center;
-    flex-direction: column;
     align-items: center;
     gap: 64px;
+}
+#sobre-mi {
+    flex-direction: column;
 }
 .portada__container {
     text-align: center;
@@ -203,4 +207,29 @@ html {
 /* Opcional: Para que no haya desplazamiento horizontal si el contenido se desborda */
 body {
     overflow-x: hidden;
+}
+
+
+@keyframes rotateDiamond {
+    0% { content: url('../icons/diamond_front.svg'); }
+    50% { content: url('../icons/diamond_side_right.svg'); }
+    100% { content: url('../icons/diamond_front.svg'); }
+}
+
+.icon-diamond img {
+    position: absolute;
+    animation: rotateDiamond 1s infinite;
+    text-align: center;
+}
+
+.icon-diamond__bottom img {
+    transform: rotate(16deg);
+    bottom: 25%;
+    right: 10%;
+}
+
+.icon-diamond__top img {
+    transform: rotate(calc(180deg - 16deg));
+    top: 25%;
+    left: 10%;
 }
