@@ -36,8 +36,9 @@ document.querySelectorAll("#menu > i").forEach(item => {
 
 window.addEventListener('scroll', () => {
     if (isScrolling) return; // Si el desplazamiento fue iniciado por un clic en el menú, no hacer nada
+    console.log("scrolling");
 
-    document.querySelectorAll('body > section').forEach((element) => {
+    document.querySelectorAll('main > section').forEach((element) => {
         const rect = element.getBoundingClientRect();
     
         // Detecta si el elemento está en la parte superior de la pantalla

@@ -100,19 +100,46 @@ main > section {
     padding: 16px;
 }
 
-#portada, #sobre-mi {
+#portada, #sobre-mi, #contacto {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 64px;
 }
-#sobre-mi {
-    flex-direction: column;
-}
 .portada__container {
     text-align: center;
 }
+#sobre-mi {
+    flex-direction: column;
+}
+#sobre-mi p {
+    text-align: center;
+    margin-bottom: 16px;
+}
+.cv__container {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+#cv {
+    background: #2b0044;
+    color: white;
+    padding: 16px;
+    border-radius: 8px;
+    border: solid 2px;
+    border-top-color: #d600f8;
+    border-left-color: #d600f8;
+    border-bottom-color: #a101ff;
+    border-right-color: #a101ff;
+    transition: background 1s linear;
+    font-size: 1.15rem;
+}
+
+#cv:hover {
+    background: linear-gradient(to right, #d600f8, #a101ff);
+}
+
 .container__redes {
     width: 100%;
     display: flex;
@@ -120,6 +147,8 @@ main > section {
 }
 
 .card__proyect {
+    color: white;
+    text-decoration: none;
     position: relative;
     width: calc((100% - 16px)/4 - 16px);
     height: fit-content;
@@ -154,6 +183,22 @@ main > section {
     font-size: 1.25em;
 }
 
+#contacto {
+    position: relative;
+    flex-direction: column;
+    text-align: center;
+}
+#contacto i {
+    font-size: 10rem;
+    cursor: pointer;
+    color: white;
+}
+#contacto footer {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+}
 
 .view__icons {
     list-style: none;
