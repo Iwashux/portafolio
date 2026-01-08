@@ -68,6 +68,15 @@ ambiciosoContainer.addEventListener('click', (e) => {
     if (card) {
         const proyectoId = parseInt(card.getAttribute('data-id'));
         const proyecto = proyectos.find(p => p.id === proyectoId);
+        let swalWidth;
+
+        // width por tamaño de pantalla
+        if (window.innerWidth < 768) {
+            swalWidth = '100%';
+        } else {
+            swalWidth = '80%';
+        }
+
         if (proyecto.img.length > 0) {
             swal.fire({
                 title: proyecto.name,
@@ -84,7 +93,7 @@ ambiciosoContainer.addEventListener('click', (e) => {
                 showCloseButton: true,
                 showConfirmButton: false,
                 theme: 'dark',
-                width: '80%',
+                width: swalWidth,
                 customClass: {popup: 'swal-wide'},
                 didOpen: () => {
                     const swiper = new Swiper('.swiper', {

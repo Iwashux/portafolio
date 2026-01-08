@@ -66,6 +66,8 @@ nav {
 
     height: calc((var(--fontsize-menu) + var(--padding-menu)*2)*3 + var(--gap-menu)*2 + var(--border-menu)*2);
     overflow: hidden;
+
+    z-index: 999;
 }
 nav .menu {
     position: relative;
@@ -311,4 +313,35 @@ body {
     transform: rotate(calc(180deg - 16deg));
     top: 25%;
     left: 10%;
+}
+
+@media (max-width: 768px) {
+    #portada {
+        flex-direction: column;
+    }
+
+    main > section {
+        padding: 16px 65px;
+    }
+
+    .proyect__container {
+        flex-direction: column;
+    }
+
+    .card__proyect {
+        width: auto;
+        margin: 8px 0 !important;
+    }
+
+    .icon-diamond__bottom img {
+        transform: rotate(16deg);
+        bottom: 15%;
+        right: 10%;
+    }
+
+    .icon-diamond__top img {
+        transform: rotate(calc(180deg - 16deg));
+        top: 15%;
+        left: 10%;
+    }
 }
