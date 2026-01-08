@@ -335,13 +335,13 @@ body {
 
     .icon-diamond__bottom img {
         transform: rotate(16deg);
-        bottom: 15%;
+        bottom: 10%;
         right: 10%;
     }
 
     .icon-diamond__top img {
         transform: rotate(calc(180deg - 16deg));
-        top: 15%;
+        top: 10%;
         left: 10%;
     }
 }
