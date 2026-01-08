@@ -6,6 +6,10 @@
     <title>Mi Portafolio</title>
 
     <script src="https://kit.fontawesome.com/842507e7f1.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- libreria SweetAlert2 (popups / modal) -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -81,7 +85,7 @@
             <section class="proyect__container">
                 <a href="https://github.com/Iwashux/template-builds-zenless_zone_zero" class="card__proyect">
                     <h3>Creador de personajes</h3>
-                    <img src="img/creador_personajes.png" alt="Plantilla para la creación de personajes, permitiendo la personalizar y configurar de atributos y características según necesidades.">
+                    <img src="img/proyectos/creador_personajes.png" alt="Plantilla para la creación de personajes, permitiendo la personalizar y configurar de atributos y características según necesidades.">
                     <div class="lenguajes__container">
                         <i class="fa-brands fa-html5"></i> 
                         <i class="fa-brands fa-css3"></i>
@@ -92,7 +96,7 @@
         
                 <a href="https://github.com/Iwashux/PixelArt" class="card__proyect">
                     <h3>Planilla Pixel Art</h3>
-                    <img src="img/pixel_art.png" alt="Planilla que permite crear y visualizar arte en píxel, ofreciendo una plataforma sencilla para diseñar gráficos pixelados personalizados.">
+                    <img src="img/proyectos/pixel_art.png" alt="Planilla que permite crear y visualizar arte en píxel, ofreciendo una plataforma sencilla para diseñar gráficos pixelados personalizados.">
                     <div class="lenguajes__container">
                         <i class="fa-brands fa-html5"></i> 
                         <i class="fa-brands fa-css3"></i>
@@ -103,7 +107,7 @@
                 
                 <a href="https://github.com/Iwashux/Encriptador-de-texto" class="card__proyect">
                     <h3>Encriptador de Texto</h3>
-                    <img src="img/encriptador.png" alt="Herramienta web que permite encriptar y desencriptar texto, mediante métodos de cifrado simples.">
+                    <img src="img/proyectos/encriptador.png" alt="Herramienta web que permite encriptar y desencriptar texto, mediante métodos de cifrado simples.">
                     <div class="lenguajes__container">
                         <i class="fa-brands fa-html5"></i> 
                         <i class="fa-brands fa-css3"></i>
@@ -113,8 +117,8 @@
                 </a>
         
                 <a href="https://github.com/Iwashux/NumeroSecreto" class="card__proyect">
-                    <h3>Numero Mágico</h3>
-                    <img src="img/mini_juego.png" alt="Minijuego de adivinanza donde el usuario debe encontrar un número secreto generado aleatoriamente, con validaciones de entrada.">
+                    <h3>Número Mágico</h3>
+                    <img src="img/proyectos/mini_juego.png" alt="Minijuego de adivinanza donde el usuario debe encontrar un número secreto generado aleatoriamente, con validaciones de entrada.">
                     <div class="lenguajes__container">
                         <i class="fa-brands fa-html5"></i> 
                         <i class="fa-brands fa-css3"></i>
@@ -125,32 +129,8 @@
             </section>
     
             <h2>Proyectos Ambicioso</h2>
-            <section class="proyect__container">
-                <div class="card__proyect">
-                    <h3>Administración de Documentos</h3>
-                    <img src="" alt="">
-                    <div class="lenguajes__container">
-                        <i class="fa-brands fa-html5"></i>
-                        <i class="fa-brands fa-css3"></i>
-                        <i class="fa-brands fa-js"></i>
-                        <i class="fa-brands fa-laravel"></i>
-                        <i class="fa-brands fa-php"></i>
-                    </div>
-                    <p>Plataforma para gestionar y organizar documentos de autores, facilitando la creación, edición y almacenamiento de manuscritos de libros de manera eficiente.</p>
-                </div>
-        
-                <div class="card__proyect">
-                    <h3>Tienda de Intercambio</h3>
-                    <img src="" alt="">
-                    <div class="lenguajes__container">
-                        <i class="fa-brands fa-html5"></i>
-                        <i class="fa-brands fa-css3"></i>
-                        <i class="fa-brands fa-js"></i>
-                        <i class="fa-brands fa-laravel"></i>
-                        <i class="fa-brands fa-php"></i>
-                    </div>
-                    <p>Plataforma para facilitar y gestionar intercambios de productos o servicios entre usuarios de manera sencilla y segura.</p>
-                </div>
+            <section class="proyect__container ambicioso">
+                
             </section>
         </section>
     
@@ -165,6 +145,7 @@
         </section>
     </main>
 
-    <script src="js/script.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/modal.js"></script>
 </body>
 </html>
