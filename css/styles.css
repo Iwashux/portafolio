@@ -344,4 +344,9 @@ body {
         top: 10%;
         left: 10%;
     }
+
+    .container__redes {
+        display: flex;
+        flex-direction: column;
+    }
 }
