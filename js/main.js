@@ -62,10 +62,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.addEventListener("scroll", () => {
         let current = "";
+        const scrollPosition = window.scrollY + 150;
+        const isAtBottom = (window.innerHeight + window.scrollY) >= document.documentElement.scrollHeight - 10;
+
         sections.forEach((section) => {
             const sectionTop = section.offsetTop;
-            if (window.scrollY >= sectionTop - 150) {
+            if (scrollPosition >= sectionTop) {
                 current = section.getAttribute("id");
+            }
+            if (isAtBottom) {
+                current = sections[sections.length - 1].getAttribute("id");
             }
         });
 
