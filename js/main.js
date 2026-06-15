@@ -240,7 +240,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             certCard.innerHTML = `
             <div>
-                <div class="mb-1 flex items-center gap-2">
+                <div class="mb-1 flex items-center gap-4">
                     <i class="${iconClass} text-3xl"></i>
                     <h3 class="text-[1rem] font-bold text-white">${cert.title}</h3>
                 </div>
