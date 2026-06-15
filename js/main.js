@@ -111,7 +111,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <div class="flex items-start mb-4">
                     <h3 class="text-xl font-bold text-white group-hover:text-brand transition-colors min-h-[3.5rem] flex items-center">${proyecto.name}</h3>
                 </div>
-                <div class="flex justify-between items-center mb-4">
+                <div class="flex gap-2 justify-between items-center mb-4">
                     <div class="flex gap-1 bg-slate-900/50 p-1 px-2 rounded-lg shrink-0">${langHTML}</div>
                     <div class="flex flex-col gap-3 items-start">${statusBadge}</div>
                 </div>
@@ -240,8 +240,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
             certCard.innerHTML = `
             <div>
-                <div class="text-3xl mb-4"><i class="${iconClass}"></i></div>
-                <h3 class="text-lg font-bold text-white mb-1">${cert.title}</h3>
+                <div class="mb-1 flex items-center gap-2">
+                    <i class="${iconClass} text-3xl"></i>
+                    <h3 class="text-[1rem] font-bold text-white">${cert.title}</h3>
+                </div>
                 <span class="text-xs text-brand font-semibold block mb-2">${cert.issuer} — ${cert.date}</span>
                 <p class="text-sm text-slate-400 leading-relaxed">${cert.description}</p>
             </div>
