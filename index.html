@@ -1,166 +1,229 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es" class="scroll-smooth">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eduardo Silva V. | Desarrollador de Software</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Eduardo Silva V. | Desarrollador de Software</title>
 
-    <!-- Tipografía Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,500&display=swap" rel="stylesheet">
+        <!-- Tipografía Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,500&display=swap" rel="stylesheet" />
 
-    <!-- Librerías Externas -->
-    <script src="https://kit.fontawesome.com/842507e7f1.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+        <!-- Librerías Externas -->
+        <script src="https://kit.fontawesome.com/a359038daf.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
 
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: { sans: ['Montserrat', 'sans-serif'] },
-                    colors: {
-                        brand: {
-                            light: '#d8b4fe',
-                            DEFAULT: '#a855f7',
-                            dark: '#7e22ce',
-                            bg: '#0f172a',
-                            card: '#1e293b'
-                        }
-                    }
-                }
-            }
-        }
-    </script>
+        <!-- Tailwind CSS -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        fontFamily: { sans: ["Montserrat", "sans-serif"] },
+                        colors: {
+                            brand: {
+                                light: "#d8b4fe",
+                                DEFAULT: "#a855f7",
+                                dark: "#7e22ce",
+                                bg: "#0f172a",
+                                card: "#1e293b",
+                            },
+                        },
+                    },
+                },
+            };
+        </script>
 
-    <!-- Estilos Propios -->
-    <link rel="stylesheet" href="css/styles.css" />
-</head>
-<body class="bg-brand-bg text-slate-300 font-sans antialiased selection:bg-brand selection:text-white">
+        <!-- Estilos Propios -->
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
 
-    <!-- Navegación Estándar -->
-    <header class="fixed top-0 w-full bg-brand-bg/95 backdrop-blur-md border-b border-slate-800 z-50">
-        <nav class="max-w-6xl mx-auto px-6 py-4 flex items-center relative">
-            
-            <div class="flex-1 z-50">
-                <a href="#inicio" class="text-xl font-bold text-white tracking-wider hover:text-brand transition-colors">ESV.</a>
-            </div>
-            
-            <ul id="nav-links" class="hidden absolute top-full left-0 w-full bg-brand-bg/95 md:bg-transparent border-b md:border-none border-slate-800 md:static md:flex flex-col md:flex-row gap-6 md:gap-8 justify-center items-center py-8 md:py-0 font-medium text-sm transition-all shadow-2xl md:shadow-none z-40 flex-1">
-                <li><a href="#sobre-mi" class="nav-link hover:text-brand transition-colors whitespace-nowrap">Sobre mí</a></li>
-                <li><a href="#proyectos" class="nav-link hover:text-brand transition-colors whitespace-nowrap">Proyectos</a></li>
-                <li><a href="#contacto" class="nav-link hover:text-brand transition-colors whitespace-nowrap">Contacto</a></li>
-                
-                <li class="md:hidden mt-2">
-                    <a href="document/CV_Simple.pdf" download class="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold text-white bg-brand-dark hover:bg-brand border border-brand rounded-lg transition-all">
-                        <i class="fa-solid fa-download"></i> Descargar CV
+    <body class="bg-brand-bg text-slate-300 font-sans antialiased selection:bg-brand selection:text-white">
+        <!-- Navegación Estándar -->
+        <header class="fixed top-0 w-full bg-brand-bg/95 backdrop-blur-md border-b border-slate-800 z-50">
+            <nav class="max-w-6xl mx-auto px-6 py-4 flex items-center relative">
+                <div class="flex-1 z-50">
+                    <a href="#inicio" class="text-xl font-bold text-white tracking-wider hover:text-brand transition-colors">ESV.</a>
+                </div>
+
+                <ul
+                    id="nav-links"
+                    class="hidden absolute top-full left-0 w-full bg-brand-bg/95 md:bg-transparent border-b md:border-none border-slate-800 md:static md:flex flex-col md:flex-row gap-6 md:gap-8 justify-center items-center py-8 md:py-0 font-medium text-sm transition-all shadow-2xl md:shadow-none z-40 flex-1"
+                >
+                    <li>
+                        <a href="#sobre-mi" class="nav-link hover:text-brand transition-colors whitespace-nowrap">Sobre mí</a>
+                    </li>
+                    <li>
+                        <a href="#proyectos" class="nav-link hover:text-brand transition-colors whitespace-nowrap">Proyectos</a>
+                    </li>
+                    <li>
+                        <a href="#contacto" class="nav-link hover:text-brand transition-colors whitespace-nowrap">Contacto</a>
+                    </li>
+
+                    <li class="md:hidden mt-2">
+                        <a
+                            href="document/CV_Simple.pdf"
+                            download
+                            class="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold text-white bg-brand-dark hover:bg-brand border border-brand rounded-lg transition-all">
+                            <i class="fa-solid fa-download"></i> Descargar CV
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="flex-1 flex items-center justify-end gap-4 z-50">
+                    <a
+                        href="document/CV_Simple.pdf"
+                        download
+                        class="hidden md:inline-flex items-center gap-2 px-4 py-2 text-sm font-semibold text-white bg-brand-dark hover:bg-brand border border-brand rounded-lg transition-all">
+                        <i class="fa-solid fa-download"></i> CV
                     </a>
-                </li>
-            </ul>
-
-            <div class="flex-1 flex items-center justify-end gap-4 z-50">
-                <a href="document/CV_Simple.pdf" download class="hidden md:inline-flex items-center gap-2 px-4 py-2 text-sm font-semibold text-white bg-brand-dark hover:bg-brand border border-brand rounded-lg transition-all">
-                    <i class="fa-solid fa-download"></i> CV
-                </a>
-                <button id="mobile-menu-btn" class="md:hidden text-2xl text-slate-300 hover:text-brand transition-colors p-2">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
-            </div>
-        </nav>
-    </header>
-
-    <main class="max-w-6xl mx-auto px-6">
-        
-        <!-- Sección Portada -->
-        <section id="inicio" class="min-h-screen flex flex-col-reverse md:flex-row items-center justify-center gap-12 pt-20">
-            <div class="space-y-6 text-center md:text-left">
-                <h2 class="text-brand font-medium tracking-wide">Hola, mi nombre es</h2>
-                <h1 class="text-5xl md:text-7xl font-bold text-white">Eduardo Silva V.</h1>
-                <h3 class="text-3xl md:text-5xl font-bold text-slate-500">Desarrollador de Software.</h3>
-                <p class="max-w-xl text-lg leading-relaxed mx-auto md:mx-0">
-                    Siempre mejorando y resolviendo. Apasionado por encontrar soluciones eficientes, escribir código limpio y mejorar continuamente en cada desafío técnico.
-                </p>
-                <div class="flex items-center justify-center md:justify-start gap-4 pt-4">
-                    <a href="#proyectos" class="px-6 py-3 bg-brand hover:bg-brand-light text-white font-semibold rounded-lg transition-colors">Ver proyectos</a>
-                    <a href="https://github.com/Iwashux" target="_blank" class="p-3 text-2xl text-slate-400 hover:text-white transition-colors"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/edu-silva-vil/" target="_blank" class="p-3 text-2xl text-slate-400 hover:text-[#0077b5] transition-colors"><i class="fa-brands fa-linkedin"></i></a>
+                    <button id="mobile-menu-btn" class="md:hidden text-2xl text-slate-300 hover:text-brand transition-colors p-2">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
                 </div>
-            </div>
-        </section>
+            </nav>
+        </header>
 
-        <!-- Sección Sobre Mí -->
-        <section id="sobre-mi" class="py-24 border-t border-slate-800">
-            <div class="flex items-center gap-4 mb-12">
-                <h2 class="text-3xl font-bold text-white">Sobre mí</h2>
-                <div class="h-px bg-slate-800 flex-1"></div>
-            </div>
-            
-            <div class="grid md:grid-cols-2 gap-12">
-                <div class="space-y-4 text-lg leading-relaxed text-slate-400">
-                    <p>Soy un desarrollador de software apasionado por la tecnología y el aprendizaje continuo. Me adapto con facilidad a distintos lenguajes de programación y disfruto explorando nuevas tecnologías para encontrar soluciones eficientes e innovadoras.</p>
-                    <p>Siempre busco optimizar procesos y mejorar mis habilidades, enfrentando cada desafío con una mentalidad de crecimiento y resolución de problemas. Mi enfoque es evolucionar constantemente y aportar valor a cada proyecto en el que participo.</p>
+        <main class="max-w-6xl mx-auto px-6">
+            <!-- Sección Portada -->
+            <section id="inicio" class="min-h-screen flex flex-col-reverse md:flex-row items-center justify-center gap-12 pt-20">
+                <div class="space-y-6 text-center md:text-left">
+                    <h2 class="text-brand font-medium tracking-wide">Hola, mi nombre es</h2>
+                    <h1 class="text-5xl md:text-7xl font-bold text-white">Eduardo Silva V.</h1>
+                    <h3 class="text-3xl md:text-5xl font-bold text-slate-500">Desarrollador de Software.</h3>
+                    <p class="max-w-xl text-lg leading-relaxed mx-auto md:mx-0">
+                        Siempre mejorando y resolviendo. Apasionado por encontrar soluciones eficientes, escribir código limpio y mejorar continuamente en cada desafío técnico.
+                    </p>
+                    <div class="flex items-center justify-center md:justify-start gap-4 pt-4">
+                        <a href="#proyectos" class="px-6 py-3 bg-brand hover:bg-brand-light text-white font-semibold rounded-lg transition-colors">Ver proyectos</a>
+                        <a href="https://github.com/Iwashux" target="_blank" class="p-3 text-2xl text-slate-400 hover:text-white transition-colors"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/edu-silva-vil/" target="_blank" class="p-3 text-2xl text-slate-400 hover:text-[#0077b5] transition-colors"
+                            ><i class="fa-brands fa-linkedin"></i
+                        ></a>
+                    </div>
                 </div>
-                
-                <div>
-                    <h3 class="text-xl font-semibold text-white mb-6"><i class="fa-solid fa-layer-group text-brand mr-2"></i> Tecnologías</h3>
-                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
-                        <div class="flex items-center gap-3 bg-brand-card p-3 rounded-lg border border-slate-700 hover:border-brand transition-colors">
-                            <i class="fa-brands fa-html5 text-[#fc490b] text-2xl"></i> <span class="font-medium">HTML5</span>
+            </section>
+
+            <!-- Sección Sobre Mí -->
+            <section id="sobre-mi" class="py-24 border-t border-slate-800">
+                <div class="flex items-center gap-4 mb-12">
+                    <h2 class="text-3xl font-bold text-white">Sobre mí</h2>
+                    <div class="h-px bg-slate-800 flex-1"></div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div class="space-y-4 text-lg leading-relaxed text-slate-400">
+                        <p>
+                            Soy un desarrollador de software apasionado por la tecnología y el aprendizaje continuo. Me adapto con facilidad a distintos lenguajes de programación y disfruto explorando
+                            nuevas tecnologías para encontrar soluciones eficientes e innovadoras.
+                        </p>
+                        <p>
+                            Siempre busco optimizar procesos y mejorar mis habilidades, enfrentando cada desafío con una mentalidad de crecimiento y resolución de problemas. Mi enfoque es evolucionar
+                            constantemente y aportar valor a cada proyecto en el que participo.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-semibold text-white mb-6"><i class="fa-solid fa-layer-group text-brand mr-2"></i> Tecnologías Principales</h3>
+                        <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-8">
+                            <div class="flex items-center gap-3 bg-brand-card p-3 rounded-lg border border-slate-700 hover:border-brand transition-colors">
+                                <i class="fa-brands fa-html5 text-[#fc490b] text-2xl"></i> <span class="font-medium">HTML5</span>
+                            </div>
+                            <div class="flex items-center gap-3 bg-brand-card p-3 rounded-lg border border-slate-700 hover:border-brand transition-colors">
+                                <i class="fa-brands fa-css3 text-[#2864f0] text-2xl"></i> <span class="font-medium">CSS3</span>
+                            </div>
+                            <div class="flex items-center gap-3 bg-brand-card p-3 rounded-lg border border-slate-700 hover:border-brand transition-colors">
+                                <i class="fa-brands fa-js text-[#f0db4f] text-2xl"></i> <span class="font-medium">JavaScript</span>
+                            </div>
+                            <div class="flex items-center gap-3 bg-brand-card p-3 rounded-lg border border-slate-700 hover:border-brand transition-colors">
+                                <i class="fa-brands fa-php text-[#777bb4] text-2xl"></i> <span class="font-medium">PHP</span>
+                            </div>
+                            <div class="flex items-center gap-3 bg-brand-card p-3 rounded-lg border border-slate-700 hover:border-brand transition-colors">
+                                <i class="fa-brands fa-laravel text-[#f55247] text-2xl"></i> <span class="font-medium">Laravel</span>
+                            </div>
+                            <div class="flex items-center gap-3 bg-brand-card p-3 rounded-lg border border-slate-700 hover:border-brand transition-colors">
+                                <i class="fa-solid fa-database text-[#00758f] text-2xl"></i> <span class="font-medium">MySQL</span>
+                            </div>
+                            <div class="flex items-center gap-3 bg-brand-card p-3 rounded-lg border border-slate-700 hover:border-brand transition-colors">
+                                <i class="fa-brands fa-git-alt text-[#f05032] text-2xl"></i> <span class="font-medium">Git</span>
+                            </div>
                         </div>
-                        <div class="flex items-center gap-3 bg-brand-card p-3 rounded-lg border border-slate-700 hover:border-brand transition-colors">
-                            <i class="fa-brands fa-css3 text-[#2864f0] text-2xl"></i> <span class="font-medium">CSS3</span>
-                        </div>
-                        <div class="flex items-center gap-3 bg-brand-card p-3 rounded-lg border border-slate-700 hover:border-brand transition-colors">
-                            <i class="fa-brands fa-js text-[#f0db4f] text-2xl"></i> <span class="font-medium">JavaScript</span>
-                        </div>
-                        <div class="flex items-center gap-3 bg-brand-card p-3 rounded-lg border border-slate-700 hover:border-brand transition-colors">
-                            <i class="fa-brands fa-php text-[#777bb4] text-2xl"></i> <span class="font-medium">PHP</span>
-                        </div>
-                        <div class="flex items-center gap-3 bg-brand-card p-3 rounded-lg border border-slate-700 hover:border-brand transition-colors">
-                            <i class="fa-brands fa-laravel text-[#f55247] text-2xl"></i> <span class="font-medium">Laravel</span>
+
+                        <h3 class="text-xl font-semibold text-white mb-6"><i class="fa-solid fa-screwdriver-wrench text-brand mr-2"></i> Herramientas y Tecnologías Conocidas</h3>
+                        <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+                            <div class="flex items-center gap-3 bg-brand-card p-3 rounded-lg border border-slate-700 hover:border-brand transition-colors">
+                                <i class="fa-brands fa-python text-[#3776ab] text-2xl"></i> <span class="font-medium">Python</span>
+                            </div>
+                            <div class="flex items-center gap-3 bg-brand-card p-3 rounded-lg border border-slate-700 hover:border-brand transition-colors">
+                                <i class="fa-brands fa-java text-[#007396] text-2xl"></i> <span class="font-medium">Java</span>
+                            </div>
+                            <div class="flex items-center gap-3 bg-brand-card p-3 rounded-lg border border-slate-700 hover:border-brand transition-colors">
+                                <i class="fa-brands fa-aws text-[#ff9900] text-2xl"></i> <span class="font-medium">AWS</span>
+                            </div>
+                            <div class="flex items-center gap-3 bg-brand-card p-3 rounded-lg border border-slate-700 hover:border-brand transition-colors">
+                                <i class="fa-solid fa-cubes text-[#326ce5] text-2xl"></i> <span class="font-medium">K8S/Docker</span>
+                            </div>
+                            <div class="flex items-center gap-3 bg-brand-card p-3 rounded-lg border border-slate-700 hover:border-brand transition-colors">
+                                <i class="fa-brands fa-postgresql text-[#336791] text-2xl"></i> <span class="font-medium">PostgreSQL</span>
+                            </div>
+                            <div class="flex items-center gap-3 bg-brand-card p-3 rounded-lg border border-slate-700 hover:border-brand transition-colors">
+                                <i class="fa-solid fa-shield-halved text-[#e43924] text-2xl"></i> <span class="font-medium">OWASP</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- Sección Proyectos -->
-        <section id="proyectos" class="py-24 border-t border-slate-800">
-            <div class="flex items-center gap-4 mb-12">
-                <h2 class="text-3xl font-bold text-white">Proyectos Principales</h2>
-                <div class="h-px bg-slate-800 flex-1"></div>
-            </div>
-            
-            <div id="ambicioso-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20"></div>
+            <!-- Sección Proyectos -->
+            <section id="proyectos" class="py-24 border-t border-slate-800">
+                <div class="flex items-center gap-4 mb-12">
+                    <h2 class="text-3xl font-bold text-white">Proyectos Principales</h2>
+                    <div class="h-px bg-slate-800 flex-1"></div>
+                </div>
 
-            <div class="flex items-center gap-4 mb-12">
-                <h2 class="text-3xl font-bold text-white">Mini Proyectos</h2>
-                <div class="h-px bg-slate-800 flex-1"></div>
-            </div>
+                <div id="ambicioso-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20"></div>
 
-            <div id="mini-proyectos-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"></div>
-        </section>
+                <div class="flex items-center gap-4 mb-12">
+                    <h2 class="text-3xl font-bold text-white">Mini Proyectos</h2>
+                    <div class="h-px bg-slate-800 flex-1"></div>
+                </div>
 
-        <!-- Sección Contacto -->
-        <section id="contacto" class="py-24 border-t border-slate-800 text-center">
-            <h2 class="text-4xl font-bold text-white mb-6">¿Trabajamos juntos?</h2>
-            <p class="text-slate-400 max-w-xl mx-auto mb-10">Actualmente estoy abierto a nuevas oportunidades. Si tienes un proyecto en mente o necesitas un desarrollador en tu equipo, escríbeme.</p>
-            <a href="mailto:edu.silva.vil@gmail.com" class="inline-flex items-center gap-3 px-8 py-4 bg-transparent border border-brand text-brand hover:bg-brand hover:text-white font-bold rounded-lg transition-colors">
-                <i class="fa-regular fa-paper-plane"></i> edu.silva.vil@gmail.com
-            </a>
-        </section>
-    </main>
+                <div id="mini-proyectos-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"></div>
+            </section>
 
-    <footer class="bg-brand-bg py-6 border-t border-slate-800 text-center text-sm text-slate-500">
-        <p>&copy; 2026 Eduardo Silva V.</p>
-    </footer>
+            <!-- Certificados -->
+            <section id="certificados" class="py-24 border-t border-slate-800">
+                <div class="flex items-center gap-4 mb-12">
+                    <h2 class="text-3xl font-bold text-white">Certificaciones</h2>
+                    <div class="h-px bg-slate-800 flex-1"></div>
+                </div>
 
-    <!-- Scripts locales separados -->
-    <script src="js/data.js"></script>
-    <script src="js/main.js"></script>
-</body>
+                <div id="certificados-container" class="grid grid-cols-1 md:grid-cols-3 gap-6"></div>
+            </section>
+
+            <!-- Sección Contacto -->
+            <section id="contacto" class="py-24 border-t border-slate-800 text-center">
+                <h2 class="text-4xl font-bold text-white mb-6">¿Trabajamos juntos?</h2>
+                <p class="text-slate-400 max-w-xl mx-auto mb-10">
+                    Actualmente estoy abierto a nuevas oportunidades. Si tienes un proyecto en mente o necesitas un desarrollador en tu equipo, escríbeme.
+                </p>
+                <a
+                    href="mailto:edu.silva.vil@gmail.com"
+                    class="inline-flex items-center gap-3 px-8 py-4 bg-transparent border border-brand text-brand hover:bg-brand hover:text-white font-bold rounded-lg transition-colors">
+                    <i class="fa-regular fa-paper-plane"></i> edu.silva.vil@gmail.com
+                </a>
+            </section>
+        </main>
+
+        <footer class="bg-brand-bg py-6 border-t border-slate-800 text-center text-sm text-slate-500">
+            <p>&copy; 2026 Eduardo Silva V.</p>
+        </footer>
+
+        <!-- Scripts locales separados -->
+        <script src="js/data.js"></script>
+        <script src="js/main.js"></script>
+    </body>
 </html>

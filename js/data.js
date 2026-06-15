@@ -11,8 +11,8 @@ const proyectos = [
             "img/proyectos/mi_autor/cap3.png",
             "img/proyectos/mi_autor/cap4.png",
             "img/proyectos/mi_autor/cap5.png",
-            "img/proyectos/mi_autor/cap6.png"
-        ]
+            "img/proyectos/mi_autor/cap6.png",
+        ],
     },
     {
         id: 2,
@@ -20,20 +20,16 @@ const proyectos = [
         estado: "En desarrollo",
         lenguajes: ["html5", "css3", "js", "laravel", "php"],
         descrip: "Plataforma para facilitar y gestionar intercambios de productos o servicios entre usuarios de manera sencilla y segura.",
-        img: []
+        img: [],
     },
     {
         id: 3,
-        name: "Sistema de gestión administrativa", 
+        name: "Sistema de gestión administrativa",
         estado: "En producción",
         lenguajes: ["html5", "css3", "js", "laravel", "php"],
         descrip: "Plataforma web para la gestión integral de procesos administrativos, que permite administrar usuarios, registros, pagos, certificaciones y controlar accesos mediante un sistema de roles y permisos personalizables.",
-        img: [
-            "img/proyectos/gestion_administrativa/cap1.png",
-            "img/proyectos/gestion_administrativa/cap2.png",
-            "img/proyectos/gestion_administrativa/cap3.png"
-        ]
-    }
+        img: ["img/proyectos/gestion_administrativa/cap1.png", "img/proyectos/gestion_administrativa/cap2.png", "img/proyectos/gestion_administrativa/cap3.png"],
+    },
 ];
 
 const miniProyectos = [
@@ -41,32 +37,75 @@ const miniProyectos = [
         id: 101,
         name: "Creador de personajes",
         repoUrl: "https://github.com/Iwashux/template-builds-zenless_zone_zero",
+        pageUrl: "https://iwashux.github.io/template-builds-zenless_zone_zero/",
         img: "img/proyectos/creador_personajes.png",
         descrip: "Plantilla para la creación y personalización de atributos según necesidades.",
-        lenguajes: ["html5", "css3", "js"]
+        lenguajes: ["html5", "css3", "js"],
     },
     {
         id: 102,
         name: "Planilla Pixel Art",
         repoUrl: "https://github.com/Iwashux/PixelArt",
+        pageUrl: "https://iwashux.github.io/PixelArt/",
         img: "img/proyectos/pixel_art.png",
         descrip: "Plataforma web sencilla para diseñar y visualizar gráficos pixelados personalizados.",
-        lenguajes: ["html5", "css3", "js"]
+        lenguajes: ["html5", "css3", "js"],
     },
     {
         id: 103,
         name: "Encriptador de Texto",
         repoUrl: "https://github.com/Iwashux/Encriptador-de-texto",
+        pageUrl: "https://iwashux.github.io/Encriptador-de-texto/",
         img: "img/proyectos/encriptador.png",
         descrip: "Herramienta web para encriptar y desencriptar texto mediante cifrados simples.",
-        lenguajes: ["html5", "css3", "js"]
+        lenguajes: ["html5", "css3", "js"],
     },
     {
         id: 104,
         name: "Número Mágico",
         repoUrl: "https://github.com/Iwashux/NumeroSecreto",
+        pageUrl: "https://iwashux.github.io/NumeroSecreto/",
         img: "img/proyectos/mini_juego.png",
         descrip: "Minijuego de adivinanza con generación aleatoria y validaciones de entrada.",
-        lenguajes: ["html5", "css3", "js"]
-    }
+        lenguajes: ["html5", "css3", "js"],
+    },
+];
+
+const certificaciones = [
+    {
+        id: 0,
+        title: "Título en Ingeniería en Informática",
+        issuer: "Universidad Bernardo O'Higgins",
+        date: "23 de febrero de 2024",
+        credentialUrl: "document/CertificadoTitulo.pdf", // Ruta local al PDF
+        isLocalFile: true, // Bandera para identificar que es un archivo local
+        description: "Grado académico y título profesional enfocado en el desarrollo de soluciones de software, gestión de proyectos tecnológicos y optimización de sistemas informáticos.",
+    },
+    {
+        id: 1,
+        title: "Container and Container Orchestration Fundamentals",
+        issuer: "Learnkarts / Coursera",
+        date: "4 de junio de 2026",
+        credentialUrl: "https://coursera.org/share/eb49aee966688b1b014429108f2070d0",
+        isLocalFile: false,
+        description: "Arquitectura de contenedores, Docker Compose, Docker Swarm y fundamentos prácticos de Kubernetes.",
+    },
+    {
+        id: 2,
+        title: "A Detailed Guide to the OWASP Top 10 (2025)",
+        issuer: "Packt / Coursera",
+        date: "11 de junio de 2026",
+        credentialUrl: "https://coursera.org/share/2c2266c881a2cdf1317305a26cb53ee4",
+        isLocalFile: false,
+        description: "Identificación y mitigación de vulnerabilidades críticas en aplicaciones web y APIs usando prácticas de codificación segura.",
+    },
+    {
+        id: 3,
+        title: "OWASP Top 10 - 2021 (Especialización)",
+        issuer: "Infosec / Coursera",
+        date: "4 de junio de 2026",
+        credentialUrl: "https://coursera.org/share/64f7c281ee9de3f2fa92c31b2185eab7",
+        isLocalFile: false,
+        description: "Gestión de accesos, criptografía, inyecciones de dependencias, seguridad de aplicaciones e Identity and Access Management (IAM).",
+    },
 ];
