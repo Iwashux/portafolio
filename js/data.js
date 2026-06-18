@@ -100,15 +100,6 @@ const certificaciones = [
         description: "Gestión de accesos, criptografía, inyecciones de dependencias, seguridad de aplicaciones e Identity and Access Management (IAM).",
     },
     {
-        id: 4,
-        title: "LÓGICA DE PROGRAMACIÓN CON JAVASCRIPT",
-        issuer: "Alura / Oracle Next Education",
-        date: "22 de junio de 2024",
-        credentialUrl: "https://app.aluracursos.com/user/edu-silva-vil/degree-programacion-primeros-pasos-15697/certificate",
-        isLocalFile: false,
-        description: "Fundamentos de JavaScript con enfoque en variables, funciones, listas y control de versiones mediante Git y GitHub.",
-    },
-    {
         id: 5,
         title: "PRINCIPIANTE EN PROGRAMACIÓN G7 - ONE",
         issuer: "Alura / Oracle Next Education",
@@ -116,6 +107,15 @@ const certificaciones = [
         credentialUrl: "https://app.aluracursos.com/user/edu-silva-vil/degree-programacion-primeros-pasos-grupo7-one-15788/certificate",
         isLocalFile: false,
         description: "Desarrollo frontend responsivo utilizando HTML, CSS y JavaScript, integrando lógica de programación y resolución de proyectos prácticos.",
+    },
+    {
+        id: 4,
+        title: "LÓGICA DE PROGRAMACIÓN CON JAVASCRIPT",
+        issuer: "Alura / Oracle Next Education",
+        date: "22 de junio de 2024",
+        credentialUrl: "https://app.aluracursos.com/user/edu-silva-vil/degree-programacion-primeros-pasos-15697/certificate",
+        isLocalFile: false,
+        description: "Fundamentos de JavaScript con enfoque en variables, funciones, listas y control de versiones mediante Git y GitHub.",
     },
     {
         id: 6,
