@@ -73,31 +73,22 @@ const miniProyectos = [
 
 const certificaciones = [
     {
-        id: 0,
-        title: "Título en Ingeniería en Informática",
-        issuer: "Universidad Bernardo O'Higgins",
-        date: "23 de febrero de 2024",
-        credentialUrl: "document/CertificadoTitulo.pdf", // Ruta local al PDF
-        isLocalFile: true, // Bandera para identificar que es un archivo local
-        description: "Grado académico y título profesional enfocado en el desarrollo de soluciones de software, gestión de proyectos tecnológicos y optimización de sistemas informáticos.",
-    },
-    {
         id: 1,
-        title: "Container and Container Orchestration Fundamentals",
-        issuer: "Learnkarts / Coursera",
-        date: "4 de junio de 2026",
-        credentialUrl: "https://coursera.org/share/eb49aee966688b1b014429108f2070d0",
-        isLocalFile: false,
-        description: "Arquitectura de contenedores, Docker Compose, Docker Swarm y fundamentos prácticos de Kubernetes.",
-    },
-    {
-        id: 2,
         title: "A Detailed Guide to the OWASP Top 10 (2025)",
         issuer: "Packt / Coursera",
         date: "11 de junio de 2026",
         credentialUrl: "https://coursera.org/share/2c2266c881a2cdf1317305a26cb53ee4",
         isLocalFile: false,
         description: "Identificación y mitigación de vulnerabilidades críticas en aplicaciones web y APIs usando prácticas de codificación segura.",
+    },
+    {
+        id: 2,
+        title: "Container and Container Orchestration Fundamentals",
+        issuer: "Learnkarts / Coursera",
+        date: "4 de junio de 2026",
+        credentialUrl: "https://coursera.org/share/eb49aee966688b1b014429108f2070d0",
+        isLocalFile: false,
+        description: "Arquitectura de contenedores, Docker Compose, Docker Swarm y fundamentos prácticos de Kubernetes.",
     },
     {
         id: 3,
@@ -107,5 +98,32 @@ const certificaciones = [
         credentialUrl: "https://coursera.org/share/64f7c281ee9de3f2fa92c31b2185eab7",
         isLocalFile: false,
         description: "Gestión de accesos, criptografía, inyecciones de dependencias, seguridad de aplicaciones e Identity and Access Management (IAM).",
+    },
+    {
+        id: 4,
+        title: "LÓGICA DE PROGRAMACIÓN CON JAVASCRIPT",
+        issuer: "Alura / Oracle Next Education",
+        date: "22 de junio de 2024",
+        credentialUrl: "https://app.aluracursos.com/user/edu-silva-vil/degree-programacion-primeros-pasos-15697/certificate",
+        isLocalFile: false,
+        description: "Fundamentos de JavaScript con enfoque en variables, funciones, listas y control de versiones mediante Git y GitHub.",
+    },
+    {
+        id: 5,
+        title: "PRINCIPIANTE EN PROGRAMACIÓN G7 - ONE",
+        issuer: "Alura / Oracle Next Education",
+        date: "7 de julio de 2024",
+        credentialUrl: "https://app.aluracursos.com/user/edu-silva-vil/degree-programacion-primeros-pasos-grupo7-one-15788/certificate",
+        isLocalFile: false,
+        description: "Desarrollo frontend responsivo utilizando HTML, CSS y JavaScript, integrando lógica de programación y resolución de proyectos prácticos.",
+    },
+    {
+        id: 6,
+        title: "Título en Ingeniería en Informática",
+        issuer: "Universidad Bernardo O'Higgins",
+        date: "23 de febrero de 2024",
+        credentialUrl: "document/CertificadoTitulo.pdf", // Ruta local al PDF
+        isLocalFile: true, // Bandera para identificar que es un archivo local
+        description: "Grado académico y título profesional enfocado en el desarrollo de soluciones de software, gestión de proyectos tecnológicos y optimización de sistemas informáticos.",
     },
 ];
